@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hello says hello with the right name 1`] = `"Hello stranger!"`;
+
+exports[`hello says hello with the right name 2`] = `"Oh, hello, gabro!"`;

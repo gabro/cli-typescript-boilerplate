@@ -14,7 +14,8 @@
     "start": "node dist/index.js",
     "watch": "tsc -w",
     "build": "tsc",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest",
+    "lint": "eslint --ext .ts --ext .js src tests",
     "prepublish": "yarn build",
     "smooth-release": "smooth-release",
     "precommit": "lint-staged"
@@ -23,12 +24,21 @@
     "@types/chalk": "^0.4.31",
     "@types/commander": "^2.9.1",
     "@types/inquirer": "^0.0.35",
+    "@types/jest": "^20.0.4",
     "@types/node": "^8.0.14",
     "@types/node-emoji": "^1.4.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-buildo": "buildo/eslint-config",
+    "jest": "^20.0.4",
     "lint-staged": "^4.0.2",
+    "mock-stdin": "^0.3.1",
     "prettier": "^1.5.3",
     "smooth-release": "^8.0.4",
-    "typescript": "^2.4.2"
+    "test": "^0.6.0",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.2",
+    "typescript-eslint-parser": "^4.0.0"
   },
   "dependencies": {
     "chalk": "^2.0.1",
@@ -41,6 +51,19 @@
     "*.ts": [
       "prettier --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
     ]
   }
 }

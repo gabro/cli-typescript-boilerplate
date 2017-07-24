@@ -1,4 +1,4 @@
-import { logInfo, logDetail } from "../utils";
+import { logInfo } from "../utils";
 import { prompt as ask } from "inquirer";
 
 export default async function hello(): Promise<void> {
@@ -7,7 +7,7 @@ export default async function hello(): Promise<void> {
     {
       type: "input",
       name: "name",
-      message: `What's your name?`
+      message: "What's your name?"
     }
   ]);
   logInfo(`Oh, hello, ${name}!`);
