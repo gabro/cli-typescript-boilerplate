@@ -1,5 +1,5 @@
 # cli-typescript-boilerplate
-A boilerplate for CLI tools written in TypeScript
+A boilerplate for writing CLI tools in TypeScript.
 
 ## Motivation
 I write short self-contained CLI tools quite often, and they all follow a basic structure that I decided to "formalize" in this boilerplate, and minimize the time of setting this up.
