@@ -35,7 +35,6 @@
     "lint-staged": "^4.0.2",
     "mock-stdin": "^0.3.1",
     "prettier": "^1.5.3",
-    "smooth-release": "^8.0.4",
     "test": "^0.6.0",
     "ts-jest": "^20.0.7",
     "typescript": "^2.4.2",
