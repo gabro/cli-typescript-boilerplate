@@ -13,8 +13,8 @@ The CLI "interface" uses [commander](https://github.com/tj/commander.js), which 
 
 Another library that's showcased (and that I heavely use in real projects) is [Inquirer.js](https://github.com/SBoudrias/Inquirer.js/), that provides a delightful experience to the users, with rich and interactive prompts that are a pleasure to use.
 
-As mentioned, **TypeScript** is awesome for speeding up the workflow and catching errors early on in the development phase, especially in the starting phase where many refactors occur. Even if you don't explicitly annotate your functions, you will still get benefits from TS.
+As mentioned, [TypeScript](typescriptlang.org) is awesome for speeding up the workflow and catching errors early on in the development phase, especially in the starting phase where many refactors occur. Even if you don't explicitly annotate your functions, you will still get benefits from TS.
 
-Jest is also an amazing tool, which provides a very pleasant testing experience, with almost no configuration. It's snapshot feature has become known for React components, but it's also very appropriate for testing the output of a CLI program.
+[Jest](https://facebook.github.io/jest/) is also an amazing tool, which provides a very pleasant testing experience, with almost no configuration. It's snapshot feature has become known for React components, but it's also very appropriate for testing the output of a CLI program.
 
-Finally, linting is done via ESLint (with typescript-eslint-parser for TypeScript support) and prettier runs automatically on git commits, leaving no room for mis-formatted code and bad code practices.
+Finally, linting is done via [ESLint](eslint.org) (with [typescript-eslint-parser](https://github.com/eslint/typescript-eslint-parser) for TypeScript support) and [prettier](https://prettier.io/) runs automatically on git commits, leaving no room for mis-formatted code and bad code practices.
