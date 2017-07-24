@@ -49,7 +49,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "prettier --write",
+      "prettier --single-quote=true --write",
       "git add"
     ]
   },
