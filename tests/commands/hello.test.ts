@@ -1,15 +1,15 @@
-const log = jest.fn();
-console.log = log; // eslint-disable-line no-console
+import { hello } from '../../src/commands';
+import { runWithAnswers, ENTER } from '../utils';
 
-const { hello } = require('../../src/commands');
-const { runWithAnswers, ENTER } = require('../utils');
+jest.mock('../../src/utils');
+const logInfo = require('../../src/utils').logInfo;
 
 describe('hello', () => {
   it('says hello with the right name', async () => {
     await runWithAnswers(hello, ['gabro', ENTER]).then(() => {
-      expect(log).toHaveBeenCalledTimes(2);
-      expect(log.mock.calls[0][0]).toMatchSnapshot();
-      expect(log.mock.calls[1][0]).toMatchSnapshot();
+      expect(logInfo).toHaveBeenCalledTimes(2);
+      expect(logInfo.mock.calls[0][0]).toMatchSnapshot();
+      expect(logInfo.mock.calls[1][0]).toMatchSnapshot();
     });
   });
 });

@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`hello says hello with the right name 1`] = `"👋  Hello stranger!"`;
+exports[`hello says hello with the right name 1`] = `":wave:  Hello stranger!"`;
 
 exports[`hello says hello with the right name 2`] = `"Oh, nice to meet you, gabro!"`;
