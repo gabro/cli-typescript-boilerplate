@@ -29,7 +29,7 @@
     "@types/node-emoji": "^1.4.0",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.3.0",
-    "eslint-config-buildo": "buildo/eslint-config",
+    "eslint-config-buildo": "https://github.com/buildo/eslint-config.git#master",
     "eslint-config-prettier": "^2.3.0",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.2",

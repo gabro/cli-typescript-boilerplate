@@ -890,9 +890,9 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.2.0"
 
-eslint-config-buildo@buildo/eslint-config:
+"eslint-config-buildo@https://github.com/buildo/eslint-config.git#master":
   version "0.2.1"
-  resolved "https://codeload.github.com/buildo/eslint-config/tar.gz/20fc57a35eebd4a665732c7db0a86dc8f23ca8ef"
+  resolved "https://github.com/buildo/eslint-config.git#20fc57a35eebd4a665732c7db0a86dc8f23ca8ef"
   dependencies:
     eslint-plugin-no-copy-paste-default-export "^0.0.3"
     eslint-plugin-no-loops "^0.3.0"
