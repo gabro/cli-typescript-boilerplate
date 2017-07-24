@@ -1,13 +1,11 @@
-const stdin = require('mock-stdin').stdin();
+const stdin = require('bdd-stdin');
 
 export const ENTER = '\x0D';
 
 export async function runWithAnswers<A>(
   command: () => Promise<A>,
-  combo: Array<String>
+  combo: Array<string>
 ): Promise<A> {
-  process.nextTick(() => {
-    combo.forEach(k => stdin.send(k));
-  });
+  stdin(combo);
   return command();
 }

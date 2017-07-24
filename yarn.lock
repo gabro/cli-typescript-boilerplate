@@ -517,6 +517,12 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+bdd-stdin@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bdd-stdin/-/bdd-stdin-0.2.0.tgz#04e66aa480e0e0df861e288a4062fb8557db2441"
+  dependencies:
+    mock-stdin "0.3.0"
+
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -890,9 +896,9 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.2.0"
 
-"eslint-config-buildo@https://github.com/buildo/eslint-config.git#master":
-  version "0.2.1"
-  resolved "https://github.com/buildo/eslint-config.git#20fc57a35eebd4a665732c7db0a86dc8f23ca8ef"
+eslint-config-buildo@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-buildo/-/eslint-config-buildo-0.2.2.tgz#5ccc74a5c838adf452fa390ba8b8e1a0f5daec4a"
   dependencies:
     eslint-plugin-no-copy-paste-default-export "^0.0.3"
     eslint-plugin-no-loops "^0.3.0"
@@ -2171,9 +2177,9 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mock-stdin@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/mock-stdin/-/mock-stdin-0.3.1.tgz#c657d9642d90786435c64ca5e99bbd4d09bd7dd3"
+mock-stdin@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/mock-stdin/-/mock-stdin-0.3.0.tgz#f40d2a513a114e6d547480625b5ef5190744bd4d"
 
 ms@2.0.0:
   version "2.0.0"
