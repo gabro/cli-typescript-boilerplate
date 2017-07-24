@@ -1,5 +1,5 @@
 {
-  "extends": "buildo",
+  "extends": ["buildo", "prettier"],
   "parser": "typescript-eslint-parser",
   "parserOptions": {
     "sourceType": "module"

@@ -1,12 +1,12 @@
-import { logInfo } from "../utils";
-import { prompt as ask } from "inquirer";
+import { logInfo } from '../utils';
+import { prompt as ask } from 'inquirer';
 
 export default async function hello(): Promise<void> {
-  logInfo("Hello stranger!");
+  logInfo('Hello stranger!');
   const { name } = await ask([
     {
-      type: "input",
-      name: "name",
+      type: 'input',
+      name: 'name',
       message: "What's your name?"
     }
   ]);

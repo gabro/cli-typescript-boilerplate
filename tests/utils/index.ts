@@ -1,6 +1,6 @@
-const stdin = require("mock-stdin").stdin();
+const stdin = require('mock-stdin').stdin();
 
-export const ENTER = "\x0D";
+export const ENTER = '\x0D';
 
 export async function runWithAnswers<A>(
   command: () => Promise<A>,
