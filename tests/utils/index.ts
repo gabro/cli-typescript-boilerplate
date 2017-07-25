@@ -4,8 +4,8 @@ export const ENTER = '\x0D';
 
 export async function runWithAnswers<A>(
   command: () => Promise<A>,
-  combo: Array<string>
+  combo: Array<string> = []
 ): Promise<A> {
-  stdin(combo);
+  if (combo.length > 0) stdin(combo);
   return command();
 }

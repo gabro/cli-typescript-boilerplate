@@ -7,7 +7,8 @@ import { hello } from './commands';
 program
   .command('hello')
   .description(`Let's get to know each other`)
-  .action(() => hello());
+  .option('-n, --userName <userName>', 'your name (optional)')
+  .action(({ userName }) => hello(userName));
 
 program.version((pkg as any).version).parse(process.argv);
 
