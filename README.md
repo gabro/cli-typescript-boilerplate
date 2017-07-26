@@ -9,9 +9,9 @@ TypeScript is also a great workflow improvement (type-safety and autocompletion 
 Another thing that's not straightforward is how to **test** interactive CLI. In this boilerplate I give an example of how to test a CLI command using [Jest's Snapshot Testing](https://facebook.github.io/jest/docs/snapshot-testing.html).
 
 ## Technology (opinionated) choices
-The CLI "interface" uses [commander](https://github.com/tj/commander.js), which provides arguments/options parsing and validation, as well as a natural separation in sub-commands.
+The CLI "interface" uses [yargs](https://github.com/yargs/yargs), which provides arguments/options parsing and validation, as well as a convenient separation in sub-commands.
 
-Another library that's showcased (and that I heavely use in real projects) is [Inquirer.js](https://github.com/SBoudrias/Inquirer.js/), that provides a delightful experience to the users, with rich and interactive prompts that are a pleasure to use.
+Another library that's showcased (and that I heavily use in real projects) is [Inquirer.js](https://github.com/SBoudrias/Inquirer.js/), that provides a delightful experience to the users, with rich and interactive prompts that are a pleasure to use.
 
 As mentioned, [TypeScript](typescriptlang.org) is awesome for speeding up the workflow and catching errors early on in the development phase, especially in the starting phase where many refactors occur. Even if you don't explicitly annotate your functions, you will still get benefits from TS.
 
